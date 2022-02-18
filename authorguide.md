@@ -120,7 +120,7 @@ Congratulations. You just wrote your first CodeRunner question.
 
 CodeRunner comes with a set of around 13 built-in question types to handle
 simple write-a-program or write-a-function question in
-the most common languages (C, C++, Python, Java, Pascal, PHP and
+the most common languages (C, C++, Rust, Python, Java, Pascal, PHP and
 Octave). Although experience suggests that most question authors move fairly
 rapidly to write their own question types, familiarity with how the
 built-in question types worth is a necessary first step.
@@ -160,6 +160,8 @@ The following built-in question types are currently available within CodeRunner:
 1. `java_method`
 1. `pascal_program`
 1. `pascal_function`
+1. `rust_program`
+1. `rust_function`
 1. `octave_function`
 1. `php`
 

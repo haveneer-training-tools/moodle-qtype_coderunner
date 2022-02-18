@@ -120,7 +120,7 @@ at least some of its language strings translated into 19 other languages (see
 [here](https://moodle.org/plugins/translations.php?plugin=qtype_coderunner])).
 
 CodeRunner supports the following languages: Python2 (considered obsolete),
-Python3, C, C++, Java, PHP, Pascal, JavaScript (NodeJS), Octave and Matlab.
+Python3, C, C++, Rust, Java, PHP, Pascal, JavaScript (NodeJS), Octave and Matlab.
 However, other languages are easily supported without altering the source
 code of either CodeRunner or the Jobe server just by scripting
 the execution of the new language within a Python-based question.
@@ -677,7 +677,7 @@ file, with PHP code enclosed in <?php ... ?> tags and the output is the
 usual PHP output including all HTML content outside the php tags.
 
 Other less commonly used built-in question types are:
-*nodejs*, *pascal\_program* and *pascal\_function*.
+*nodejs*, *rust\_program*, *rust\_function*, *pascal\_program* and *pascal\_function*.
 
 As discussed later, this base set of question types can
 be customised or extended in various ways.

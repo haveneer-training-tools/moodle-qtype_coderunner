@@ -600,7 +600,8 @@ class qtype_coderunner_edit_form extends question_edit_form {
             'java' => 'Java',
             'php' => 'php',
             'octave' => 'Octave',
-            'pascal' => 'Pascal'
+            'pascal' => 'Pascal',
+            'rust' => 'Rust',
             );
         $twigelements[] = $mform->createElement('select', 'templateparamslang',
                 get_string('templateparamslang', 'qtype_coderunner'), $templateparamlangs);

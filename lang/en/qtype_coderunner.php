@@ -555,6 +555,27 @@ to split the output back into individual test case outputs.</li>
 programs are run, one for each test case.
 </p>';
 
+$string['qtype_rust_function'] = '<p>A question type for Rust write-a-function questions.
+The student answer is expected to be a complete Rust function, but it can optionally
+be preceded by other self-contained Rust code such as support functions.</p>
+<p>The test code for such questions typically calls the student function with
+some test arguments and prints the result, such as
+<pre>println!("{}", someIntFunction(blah1, blah2))</pre>
+The test case\'s <i>Expected</i> field is the expected output from the test.</p>
+<p>
+If there is no standard input supplied for any of the test cases, a single
+test program is constructed, consisting of:</p>
+<ol>
+<li>The student answer.</li>
+<li>A sequence of blocks wrapped in braces for each of the given test cases.
+Each block contains just the test case\'s test code. There is also a <i>println!</i>
+statement added between code blocks to print a special separator that is used
+to split the output back into individual test case outputs.</li>
+</ol>
+<p>However, if any of the test cases has non-empty standard input, multiple test
+programs are run, one for each test case.
+</p><p>The test case\'s <i>extra</i> field is ignored.</p>';
+
 $string['qtype_c_program'] = '<p>Used for C write-a-program questions, where
 there is no per-test-case code, and the different tests just use different
 standard input (stdin) data. The student answer is expected to be a complete
@@ -572,6 +593,17 @@ standard input (stdin) data. The student answer is expected to be a complete
 runnable program, which is run as-is, without modification by CodeRunner,
 once for each test case. The values of the test code and extra fields of each
 test case are ignored.</p>';
+
+$string['qtype_rust_program'] = '<p>Used for Rust write-a-program questions, where
+there is no per-test-case code, and the different tests just use different
+standard input (stdin) data. The student answer is expected to be a complete
+runnable program, which is run as-is, without modification by CodeRunner,
+once for each test case. The values of the test code and extra fields of each
+test case are ignored.</p><p>If you need to set special compile or link
+arguments for the question, you can customise it (click the Customise
+checkbox), open the <i>Advanced customisation</i> section, and enter suitable
+values into the <i>Sandbox &gt; Parameters</i> field. For example<pre>
+{"linkargs":["-lm"]}</pre>to link with the math library.';
 
 $string['qtype_directed_graph'] = '<p>A python3 question type that asks the student to draw
 a directed graph to satisfy some specification. The question author has to write
