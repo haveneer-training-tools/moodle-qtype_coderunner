@@ -1238,6 +1238,8 @@ except subprocess.CalledProcessError as e:
     <useace>1</useace>
     <resultcolumns></resultcolumns>
     <template><![CDATA[
+#![allow(dead_code)]
+#![allow(unused_variables)]
 const SEPARATOR: &'static str = "#<ab@17943918#@>#";
 
 {{ STUDENT_ANSWER }}
